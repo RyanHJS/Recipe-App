@@ -1,0 +1,18 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore .env file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore the build directory (if you have one)
+/dist
+/build
+
+# Ignore the npm debug log file
+npm-debug.log*
+
+# Ignore the .DS_Store file (created by macOS)
+.DS_Store
