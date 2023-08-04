@@ -1,4 +1,6 @@
-import mysql from 'mysql2';
+const mysql = require('mysql2/promise');
+
+require("dotenv").config();
 
 const devPool = mysql.createPool({
     host: 'localhost',
@@ -6,7 +8,6 @@ const devPool = mysql.createPool({
     password: 'secret',
     database: 'recipe_app',
     port: 3307,
-    connectionLimit: process.env.DB_CONNECTION_LIMIT
 });
 
-module.exports = devPool.promise();
+module.exports = devPool;
